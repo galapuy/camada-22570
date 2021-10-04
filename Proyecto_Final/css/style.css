@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100wh;
+    height: 120vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* Configuraciones contenedor header  */
+
+#header {
+/* background-color: lightblue; */
+    width: 100%;
+    height: 16%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* Configuraciones logo */
+
+#logo {
+    margin-left: 4%;
+}
+
+#logo img {
+    width: 167px;
+    height:36 px;
+}
+
+
+/* Configuraciones navbar */
+
+.navbar {
+    font-family: 'Poppins', sans-serif;
+}
+
+.bg-light {
+    background-color: white!important;
+}
+
+.nav-item {
+    margin-right: 50px;
+}
+
+.nav-item:hover {
+    color: #FF493B!important;
+    font-weight: 700;
+}
+
+
+
+
+/* Configuraciones botones redes */
+
+#links {
+    display: flex;
+    margin-right: 4%;
+}
+
+#behance img {
+    width: 35.79px;
+    height:36 px;
+    margin-right: 8px;
+    }
+
+
+ #instagram img {
+    width: 35.79px;
+    height:36 px;
+    margin-right: 8px;
+    }
+    
+#mail img {
+    width: 35.79px;
+    height:36 px;
+    }
+    
+
+
+
+#main {
+    background-color: yellow;
+    width: 100%;
+    height: 77.5%;
+}
+
+#footer {
+    background-color: red;
+    width: 100%;
+    height: 6%;
+}
