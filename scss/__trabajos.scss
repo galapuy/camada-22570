@@ -1,0 +1,166 @@
+@import "__variables";
+
+#mainTrabajos {
+    margin-top:5%;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:"1p 2p 3p"
+                        "4p 5p 6p";
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.imagen {
+    opacity: 1;
+    filter: alpha(opacity=50);
+    zoom: 1;
+}
+
+.imagen:hover {
+    transition-duration: 1s;
+    opacity: 0;
+    filter: alpha(opacity=100);
+    zoom: 1;
+}   
+
+#proyecto1 {
+    grid-area: p1;
+    width: 100%;
+    height: 100%;
+    background-image: url("../media/LOOP---Festival-de-videoarte.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+.textBackp1 {
+        background-image: url("../media/LOOP---Festival-de-videoarte-hover.png");
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        }
+
+#proyecto2 {
+    grid-area: p2;
+    width: 100%;
+    height: 100%;
+    background-image: url("../media/Descansar-App.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.textBackp2 {
+    background-image: url("../media/Descansar-App-hover.png");
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    }
+
+#proyecto3 {
+    grid-area: p3;
+    width: 100%;
+    height: 100%;
+    background-image: url("../media/Experimentación-morfológica.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.textBackp3 {
+    background-image: url("../media/Experimentación-morfológica-hover.png");
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    }
+
+
+#proyecto4 {
+    grid-area: p4;
+    width: 100%;
+    height: 100%;
+    background-image: url("../media/Selección-Natural-Foro-de-bioética.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.textBackp4 {
+    background-image: url("../media/Selección-Natural-Foro-de-bioética-hover.png");
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    }
+
+
+#proyecto5 {
+    grid-area: p5;
+    width: 100%;
+    height: 100%;
+    background-image: url("../media/Collage-experimental.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.textBackp5 {
+    background-image: url("../media/Collage-experimental-hover.png");
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    }
+
+
+#proyecto6 {
+    grid-area: p6;
+    width: 100%;
+    height: 100%;
+    background-image: url("../media/Sumergir--Fanzine-fotográfico.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.textBackp6 {
+    background-image: url("../media/Sumergir--Fanzine-fotográfico-hover.png");
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    }
+
+#footerTrabajos {
+    display:flex;
+    align-items: center;
+    color: white;
+    background-color: $base-color;
+    width: 100%;
+    height: 6%;
+    margin-top: 5%;
+
+
+        img {
+            width: 16px;
+            height: 16px;
+            margin-left: 80px;
+            margin-right: 10px;
+        }
+
+}

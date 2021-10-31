@@ -1,0 +1,864 @@
+@import "__contacto";
+@import "__habilidades";
+@import "__sobre_mi";
+@import "__trabajos";
+@import "__404";
+@import "__variables";
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 120vh;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+
+/* Configuraciones contenedor header  */
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* Configuraciones logo */
+
+#logo {
+    margin-left: 4%;
+}
+
+#logo img {
+    width: 167px;
+    height:36 px;
+}
+
+
+/* Configuraciones navbar */
+
+.navbar {
+    font-family: 'Poppins', sans-serif;
+}
+
+.bg-light {
+    background-color: white!important;
+}
+
+.nav-item {
+    margin-right: 50px;
+
+    .nav-item:hover {
+        color: $base-color !important;
+        font-weight: 700;
+    }
+}
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+    color: $base-color;
+}
+
+
+
+
+/* Configuraciones botones redes */
+
+#links {
+    display: flex;
+    margin-right: 4%;
+
+    #behance {
+        
+        img {
+        width: 35.79px;
+        height:36 px;
+        margin-right: 8px;
+        }
+
+    }
+        
+     #instagram {
+         
+        img {
+        width: 35.79px;
+        height:36 px;
+        margin-right: 8px;
+        }
+    }
+    #mail {
+        
+        img {
+        width: 35.79px;
+        height:36 px;
+        }
+    }
+}
+
+
+    
+
+/* Configuraciones home*/
+
+#main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    #morfologiaBienvenida img {
+        width: 139px;
+        height: 139px;
+        position: relative;
+        left: 290%;
+        top: -130%;
+        }
+        
+    #textoBienvenida {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+        
+        
+            h1 {
+                width: 1013px;
+                height: 296px;
+                
+                
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 160px;
+                line-height: 160px;
+                /* or 100% */
+                
+                text-align: center;
+                
+                /* negro */
+                
+                color: #212325;
+            }
+        
+            p {
+                width: 532px;
+                height: 26px;
+                margin-top: 5%;
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 20px;
+                line-height: 30px;
+                /* or 150% */
+                
+                
+                /* rojo */
+                
+                color: #FF493B;
+            }
+        }
+}
+
+
+    @keyframes rotate {from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}}
+    @-webkit-keyframes rotate {from {-webkit-transform: rotate(0deg);}
+    to {-webkit-transform: rotate(360deg);}}
+
+    .imgrotacion{
+        -webkit-animation: 3s rotate linear infinite;
+        animation: 8s rotate linear infinite;
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+    }
+
+
+
+/* Configuraciones Footer*/
+
+#footer {
+    display:flex;
+    align-items: center;
+    color: white;
+    background-color:$base-color;
+    width: 100%;
+    height: 6%;
+
+
+        p {
+            padding-top: 1%;
+        }
+
+        img {
+            width: 16px;
+            height: 16px;
+            margin-left: 80px;
+            margin-right: 10px;
+        }
+}
+
+
+@media screen and (max-width: 1375px) {
+    body {
+        width: 100vw;
+        height: 150vh;
+        font-family: 'Poppins', sans-serif;
+    }
+}
+@media screen and (max-width: 1024px) {
+    body {
+        width: 100vw;
+        height: 80vh;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    #header {
+        justify-content: space-around;
+    }
+
+    #links {
+        display: none !important;
+        }
+
+        #main {
+            width: 100%;
+            height: 180%;
+            display: flex;
+        
+            #morfologiaBienvenida img {
+                width: 45px;
+                height: 45px;
+                left: 280%;
+                top: -150%;
+                }
+                
+            #textoBienvenida {
+                
+                    h1 {
+                        font-size: 50px;
+                        line-height: 50px;
+                    }
+                
+                    p {
+                        width: 352px;
+                        margin-top: -20%;
+                        margin-left: 10%;
+                        font-size: 10px;
+                        line-height: 30px;
+                    }
+                }
+        }
+
+
+        #mainSobreMi {
+            width: 100%;
+            height: 150%;
+
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas: "gridIzquierda" 
+                                "gridDerecha";
+        
+            #gridIzquierda {
+                background-color: #47494A;
+                grid-area: gridIzquierda;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+        
+                        img{
+                            width: 320px;
+                            height: 320px;
+                        };
+            }
+            #gridDerecha {
+                width: 493px;
+                height: 419px;
+                grid-area: gridDerecha;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                line-height: 2.0em;
+
+                margin-left:25%;
+        
+                    h1{
+                        margin-top: -15%;
+                        color: #FF493B;
+                    }
+        
+                    p{
+                        font-family: Poppins;
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 18px;
+                        letter-spacing: 0em;
+                        text-align: center;
+                        
+                    }
+        
+                    h4{
+                        color: #FF493B;
+                    }
+            }
+        }
+
+
+        #mainTrabajos {
+
+            height: 500%;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-areas:"1p" 
+                                "2p" 
+                                "3p"                  
+                                "4p" 
+                                "5p" 
+                                "6p";
+        }
+
+        #mainHabilidades {
+            width: 100%;
+            height: 230%;
+        }
+        
+        #contenedorPadreHab {
+            width: 95%;
+            height: 90%;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-areas:"uxui" 
+                                "diseño" 
+                                "video";
+            row-gap: 10px;
+            margin-left: 2%;
+        
+            #uxUi {
+                grid-area: uxui;
+                background-color: #47494A;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                color:white;
+        
+                    p{
+                        font-family: Poppins;
+                        font-size: 22px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 28px;
+                        letter-spacing: 0em;
+                        text-align: center;
+        
+                    }
+        
+            }
+        
+            #diseñoAndMaquetacion {
+                grid-area: diseño;
+                background-color: #47494A;
+        
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                color:white;
+        
+                    p{
+                        font-family: Poppins;
+                        font-size: 22px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 28px;
+                        letter-spacing: 0em;
+                        text-align: center;
+        
+                    }
+            }
+            
+            #edicionDeVideo {
+                grid-area: video;
+                background-color: #47494A;
+        
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                color:white;
+        
+                    p{
+                        font-family: Poppins;
+                        font-size: 22px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 28px;
+                        letter-spacing: 0em;
+                        text-align: center;
+        
+                    }
+            }
+        
+        .morfologia{
+            width: 200px;
+            height: 200px;
+        }
+        
+        
+        .iconos{
+            width: 114px;
+            height: 50px;
+        }
+        
+        .iconosMedio{
+            width: 177px;
+            height: 50px;
+        }
+        
+        }
+}
+@media screen and (max-width: 730px) {
+
+    body {
+        width: 100vw;
+        height: 80vh;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    #header {
+        justify-content: space-around;
+    }
+
+    #links {
+        display: none !important;
+        }
+
+        #main {
+            width: 100%;
+            height: 180%;
+            display: flex;
+        
+            #morfologiaBienvenida img {
+                width: 45px;
+                height: 45px;
+                left: 280%;
+                top: -150%;
+                }
+                
+            #textoBienvenida {
+                
+                    h1 {
+                        font-size: 50px;
+                        line-height: 50px;
+                    }
+                
+                    p {
+                        width: 352px;
+                        margin-top: -20%;
+                        margin-left: 10%;
+                        font-size: 10px;
+                        line-height: 30px;
+                    }
+                }
+        }
+
+
+        #mainSobreMi {
+            width: 100%;
+            height: 150%;
+
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas: "gridIzquierda" 
+                                "gridDerecha";
+        
+            #gridIzquierda {
+                background-color: #47494A;
+                grid-area: gridIzquierda;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+        
+                        img{
+                            width: 320px;
+                            height: 320px;
+                        };
+            }
+            #gridDerecha {
+                width: 450px;
+                height: 319px;
+                grid-area: gridDerecha;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                line-height: 2.0em;
+                margin-left:15%;
+        
+                    h1{
+                        margin-top: -15%;
+                        color: #FF493B;
+                    }
+        
+                    p{
+                        font-family: Poppins;
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 18px;
+                        letter-spacing: 0em;
+                        text-align: center;
+                        
+                    }
+        
+                    h4{
+                        color: #FF493B;
+                    }
+            }
+        }
+
+
+        #mainTrabajos {
+
+            height: 200%;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-areas:"1p" 
+                                "2p" 
+                                "3p"                  
+                                "4p" 
+                                "5p" 
+                                "6p";
+        }
+
+        #mainHabilidades {
+            width: 100%;
+            height: 230%;
+        }
+        
+        #contenedorPadreHab {
+            width: 95%;
+            height: 90%;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-areas:"uxui" 
+                                "diseño" 
+                                "video";
+            row-gap: 10px;
+            margin-left: 2%;
+        
+            #uxUi {
+                grid-area: uxui;
+                background-color: #47494A;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                color:white;
+        
+                    p{
+                        font-family: Poppins;
+                        font-size: 22px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 28px;
+                        letter-spacing: 0em;
+                        text-align: center;
+        
+                    }
+        
+            }
+        
+            #diseñoAndMaquetacion {
+                grid-area: diseño;
+                background-color: #47494A;
+        
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                color:white;
+        
+                    p{
+                        font-family: Poppins;
+                        font-size: 22px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 28px;
+                        letter-spacing: 0em;
+                        text-align: center;
+        
+                    }
+            }
+            
+            #edicionDeVideo {
+                grid-area: video;
+                background-color: #47494A;
+        
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                color:white;
+        
+                    p{
+                        font-family: Poppins;
+                        font-size: 22px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 28px;
+                        letter-spacing: 0em;
+                        text-align: center;
+        
+                    }
+            }
+        
+        .morfologia{
+            width: 200px;
+            height: 200px;
+        }
+        
+        
+        .iconos{
+            width: 114px;
+            height: 50px;
+        }
+        
+        .iconosMedio{
+            width: 177px;
+            height: 50px;
+        }
+        
+        }
+
+
+}
+@media screen and (max-width: 500px) {
+
+    body {
+        width: 100vw;
+        height: 100vh;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    #header {
+        justify-content: space-around;
+    }
+
+    #links {
+        display: none !important;
+        }
+
+        #main {
+            width: 100%;
+            height: 85%;
+            display: flex;
+        
+            #morfologiaBienvenida img {
+                width: 45px;
+                height: 45px;
+                left: 280%;
+                top: -150%;
+                }
+                
+            #textoBienvenida {
+                
+                    h1 {
+                        font-size: 50px;
+                        line-height: 50px;
+                    }
+                
+                    p {
+                        width: 352px;
+                        margin-top: -20%;
+                        margin-left: 10%;
+                        font-size: 10px;
+                        line-height: 30px;
+                    }
+                }
+        }
+
+
+        #mainSobreMi {
+            width: 100%;
+            height: 150%;
+
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas: "gridIzquierda" 
+                                "gridDerecha";
+        
+            #gridIzquierda {
+                background-color: #47494A;
+                grid-area: gridIzquierda;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+        
+                        img{
+                            width: 320px;
+                            height: 320px;
+                        };
+            }
+            #gridDerecha {
+                width: 293px;
+                height: 319px;
+                grid-area: gridDerecha;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                line-height: 2.0em;
+
+                margin-left:12%;
+        
+                    h1{
+                        margin-top: -15%;
+                        color: #FF493B;
+                    }
+        
+                    p{
+                        font-family: Poppins;
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 18px;
+                        letter-spacing: 0em;
+                        text-align: center;
+                        
+                    }
+        
+                    h4{
+                        color: #FF493B;
+                    }
+            }
+        }
+
+
+        #mainTrabajos {
+
+            height: 200%;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-areas:"1p" 
+                                "2p" 
+                                "3p"                  
+                                "4p" 
+                                "5p" 
+                                "6p";
+        }
+
+        #mainHabilidades {
+            width: 100%;
+            height: 230%;
+        }
+        
+        #contenedorPadreHab {
+            width: 95%;
+            height: 90%;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-areas:"uxui" 
+                                "diseño" 
+                                "video";
+            row-gap: 10px;
+            margin-left: 2%;
+        
+            #uxUi {
+                grid-area: uxui;
+                background-color: #47494A;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                color:white;
+        
+                    p{
+                        font-family: Poppins;
+                        font-size: 22px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 28px;
+                        letter-spacing: 0em;
+                        text-align: center;
+        
+                    }
+        
+            }
+        
+            #diseñoAndMaquetacion {
+                grid-area: diseño;
+                background-color: #47494A;
+        
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                color:white;
+        
+                    p{
+                        font-family: Poppins;
+                        font-size: 22px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 28px;
+                        letter-spacing: 0em;
+                        text-align: center;
+        
+                    }
+            }
+            
+            #edicionDeVideo {
+                grid-area: video;
+                background-color: #47494A;
+        
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                color:white;
+        
+                    p{
+                        font-family: Poppins;
+                        font-size: 22px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 28px;
+                        letter-spacing: 0em;
+                        text-align: center;
+        
+                    }
+            }
+        
+        .morfologia{
+            width: 200px;
+            height: 200px;
+        }
+        
+        
+        .iconos{
+            width: 114px;
+            height: 50px;
+        }
+        
+        .iconosMedio{
+            width: 177px;
+            height: 50px;
+        }
+        
+        }
+
+
+}
